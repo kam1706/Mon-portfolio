@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kamagate Drissa Adama</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Elements for Glassmorphism Effect -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <nav>
+        <div class="logo">KDA<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#accueil" class="active">Accueil</a></li>
+            <li><a href="#a-propos">À Propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil" class="hero">
+            <div class="hero-content fade-in">
+                <p class="subtitle">Bonjour, je suis</p>
+                <h1>Kamagate <span class="highlight">Drissa Adama</span></h1>
+                <h2 class="typing-text">Développeur Web & <br> Étudiant en Informatique</h2>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Me Contacter</a>
+                    <a href="#a-propos" class="btn btn-secondary">En Savoir Plus</a>
+                </div>
+            </div>
+            <div class="hero-image slide-in-right">
+                <!-- Image placeholder, styled purely with CSS for modern abstract flair -->
+                <div class="abstract-portrait">
+                    <div class="circle"></div>
+                    <div class="floating-icons">
+                        <i class="fa-brands fa-html5" style="color: #E34F26;"></i>
+                        <i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i>
+                        <i class="fa-brands fa-js" style="color: #F7DF1E;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À Propos -->
+        <section id="a-propos" class="about">
+            <h2 class="section-title fade-in">À Propos de Moi</h2>
+            <div class="about-container glass-card fade-up">
+                <div class="about-text">
+                    <p>
+                        Bonjour ! Je suis <span class="highlight">Kamagate Drissa Adama</span>, étudiant en informatique
+                        depuis maintenant 2 ans et développeur web passionné.
+                    </p>
+                    <p>
+                        J'aime coder et transformer des idées en expériences numériques engageantes. Mon parcours
+                        académique m'a permis d'acquérir de solides bases en informatique, tandis que ma curiosité m'a
+                        poussé à me spécialiser dans le développement web afin de créer des sites réactifs, modernes et
+                        performants.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>2+</h3>
+                        <p>Années d'Études</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Passionné</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences (Placeholder) -->
+        <section id="competences" class="skills">
+            <h2 class="section-title fade-in">Mes Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card fade-up" style="transition-delay: 0.1s;">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card fade-up" style="transition-delay: 0.2s;">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3 / Design Moderne</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card fade-up" style="transition-delay: 0.3s;">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="contact-box glass-card reveal">
+                    <h2>Me contacter?</h2>
+                    <p>Envoyez-moi un message via le formulaire ci-dessous et je vous répondrai dans les plus brefs
+                        délais !</p>
+
+                    <form action="https://formsubmit.co/Kamagateidriss3@gmail.com" method="POST" class="contact-form">
+                        <!-- Configuration FormSubmit -->
+                        <input type="hidden" name="_subject" value="Nouveau message depuis le Portfolio !">
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Redirection après envoi (optionnel) : <input type="hidden" name="_next" value="https://votre-site.com/merci.html"> -->
+
+                        <div class="form-group">
+                            <input type="text" name="nom" id="nom" placeholder="Votre Nom complet" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Votre adresse E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="5" placeholder="Votre Message..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large w-100">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Kamagate Drissa Adama. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
